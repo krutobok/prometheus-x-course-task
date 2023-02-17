@@ -1,0 +1,22 @@
+.my-button {
+  border-radius: 10px;
+  background: #000d5d;
+  border: 1px solid #000d5d;
+  transition: all 0.5s;
+  color: #fff;
+}
+.my-button:hover {
+  color: #000d5d;
+  background-color: #a5ff82;
+}
+.my-button:disabled {
+  background: #000d5d;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.my-button:disabled:hover {
+  color: #fff;
+  background: #000d5d;
+  cursor: not-allowed;
+}

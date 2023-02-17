@@ -1,0 +1,23 @@
+.book__specification-text {
+  margin-left: 0;
+}
+.book__specification-title {
+  display: block;
+}
+.book__specification-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 5px;
+}
+.book__specification-item:first-child {
+  display: flex;
+  font-weight: 600;
+}
+.book__specification-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  .book__specification-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

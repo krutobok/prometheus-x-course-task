@@ -1,0 +1,32 @@
+.book__order {
+  font-weight: 600;
+  border: 1px dashed #000d5d;
+  padding: 15px;
+  font-size: 20px;
+  flex-grow: 1;
+}
+.form-element {
+  margin-bottom: 15px;
+}
+.book__order-btn {
+  margin-top: 40px;
+  display: block;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+}
+.book__count-input {
+  width: 70px;
+  margin-left: auto;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: right;
+  line-height: 14px;
+}
+.book__count-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

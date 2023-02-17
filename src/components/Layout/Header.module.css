@@ -1,0 +1,30 @@
+.header {
+  border-bottom: 1px solid #000d5d;
+  border-top: 1px solid #000d5d;
+  padding: 15px 0;
+  background-color: #b4ff96;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header__logo {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+@media (max-width: 650px) {
+  .header__logo {
+    font-size: 20px;
+    flex-shrink: 7;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    height: 72px;
+  }
+}

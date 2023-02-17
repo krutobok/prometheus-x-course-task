@@ -1,0 +1,57 @@
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.header__btn-sing-out {
+  font-family: sans-serif;
+  padding: 6px 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.header__username-link {
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__username-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000d5d;
+}
+.header__btn-basket__img {
+  width: 50px;
+  height: 50px;
+}
+.header__btn-cart {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+@media (max-width: 650px) {
+  .header__nav {
+    flex-grow: 5;
+    flex-shrink: 0;
+  }
+}
+.header__nav.mobile {
+  z-index: 9999;
+  background-color: #b4ff96;
+  position: absolute;
+  top: 56px;
+  padding: 20px;
+  left: -15px;
+  right: -15px;
+  flex-direction: column-reverse;
+}
+@media screen and (max-width: 370px) {
+  .header__nav.mobile {
+    left: -10px;
+    right: -10px;
+  }
+}

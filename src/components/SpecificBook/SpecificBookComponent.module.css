@@ -1,0 +1,37 @@
+.book {
+  padding-top: 20px;
+}
+.book__inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+.book__description {
+  flex-basis: 100%;
+}
+
+.book__img {
+  height: 500px;
+  border: 2px solid #000d5d;
+  display: block;
+  width: 320px;
+}
+@media (max-width: 450px) {
+  .book__img {
+    height: 360px;
+    border: 2px solid #000d5d;
+    display: block;
+    width: 250px;
+  }
+  .book__inner {
+    padding: 0 0 10px 0;
+    font-size: 16px;
+  }
+  .book {
+    padding-top: 0;
+  }
+}

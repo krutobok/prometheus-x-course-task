@@ -1,0 +1,53 @@
+.sing-in {
+  padding-top: 100px;
+}
+.header__logo {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+}
+.sing-in__img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  margin-bottom: 20px;
+}
+.sing-in__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sing-in__input {
+  padding: 0 8px;
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  line-height: 150%;
+}
+.sing-in__label {
+  margin-bottom: 5px;
+}
+.sing-in__btn {
+  width: 200px;
+  padding: 5px;
+}
+
+.sing-in__label {
+  font-weight: 700;
+}
+@media screen and (max-width: 370px) {
+  .sing-in {
+    padding-top: 60px;
+  }
+  .sing-in__img {
+    width: 200px;
+    height: 200px;
+  }
+  .sing-in__input {
+    width: 100%;
+  }
+  .sing-in__btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.book-list__books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+  gap: 20px;
+}
+@media (max-width: 1100px) {
+  .book-list__books {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .book-list__books {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 530px) {
+  .book-list__books {
+    grid-template-columns: 1fr;
+  }
+}
