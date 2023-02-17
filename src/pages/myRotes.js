@@ -15,18 +15,18 @@ export default function MyRoutes() {
       <Route path="/" element={<App />}>
         {context.isUserAuth ? (
           <>
-            <Route path="/signin" element={<Navigate to="/books" />} />
-            <Route index element={<Navigate to="/books" />} />
-            <Route path="/books" element={<BooksComponent />} />
-            <Route path="/books/:bookId" element={<SpecificBook />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="signin" element={<Navigate to="books" />} />
+            <Route index element={<Navigate to="books" />} />
+            <Route path="books" element={<BooksComponent />} />
+            <Route path="books/:bookId" element={<SpecificBook />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </>
         ) : (
           <>
-            <Route path="/signin" element={<SignIn />} />
-            <Route index element={<Navigate to="/signin" />} />
-            <Route path="*" element={<Navigate to="/signin" />} />
+            <Route path="signin" element={<SignIn />} />
+            <Route index element={<Navigate to="signin" />} />
+            <Route path="*" element={<Navigate to="signin" />} />
           </>
         )}
       </Route>

@@ -35,6 +35,7 @@ const BookContextProvider = ({ children }) => {
       request('../books.json')
     }
   }, [error, isCheckedAnotherUrl])
+
   const defaultValue = {
     items: books,
     error,

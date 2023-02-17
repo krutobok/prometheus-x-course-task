@@ -6,7 +6,11 @@
 }
 .cart__item-name {
   margin-right: 20px;
+  text-align: left;
 }
 .cart__item-price {
   margin-left: auto;
+}
+.cart__item-count {
+  margin-right: 5px;
 }
