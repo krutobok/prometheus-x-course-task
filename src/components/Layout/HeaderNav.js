@@ -10,14 +10,14 @@ const HeaderNav = ({ mobile = false }) => {
   const navigation = useNavigate()
   const user = useContext(userContext)
   const logOutHandler = () => {
-    navigation('/signin')
+    navigation('signin')
     user.logOut()
   }
   return (
     <nav
       className={`${styles['header__nav']} ${mobile ? styles['mobile'] : ''} `}
     >
-      <Link to="/cart" className={styles['header__btn-cart']}>
+      <Link to="cart" className={styles['header__btn-cart']}>
         <img
           src={cartImage}
           alt="cart"

@@ -15,7 +15,7 @@ const SignInComponent = () => {
   }
   const formSubmitHandler = (e) => {
     e.preventDefault()
-    navigation('/books')
+    navigation('../books')
     context.setUserName(value)
   }
   return (

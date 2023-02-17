@@ -12,10 +12,10 @@ export default function MyRoutes() {
   const context = useContext(userContext)
   return (
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/prometheus-x-course-task/" element={<App />}>
         {context.isUserAuth ? (
           <>
-            <Route path="signin" element={<Navigate to="books" />} />
+            <Route path="signin" element={<Navigate to="../books" />} />
             <Route index element={<Navigate to="books" />} />
             <Route path="books" element={<BooksComponent />} />
             <Route path="books/:bookId" element={<SpecificBook />} />
@@ -26,7 +26,7 @@ export default function MyRoutes() {
           <>
             <Route path="signin" element={<SignIn />} />
             <Route index element={<Navigate to="signin" />} />
-            <Route path="*" element={<Navigate to="signin" />} />
+            <Route path="*" element={<Navigate to="../signin" />} />
           </>
         )}
       </Route>
