@@ -4,9 +4,9 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 import MyRoutes from './pages/myRotes'
-import BookContextProvider from './store/BookContextProvider'
-import UserContextProvider from './store/UserContextProvider'
-import CartContextProvider from './store/CartContextProvider'
+import BookContextProvider from './store/providers/BookContextProvider'
+import UserContextProvider from './store/providers/UserContextProvider'
+import CartContextProvider from './store/providers/CartContextProvider'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

@@ -1,4 +1,4 @@
-import SpecificBookComponent from '../components/SpecificBook/SpecificBookComponent'
+import SpecificBookComponent from '../components/SpecificBookComponent/SpecificBookComponent'
 
 const SpecificBook = () => {
   return <SpecificBookComponent />
