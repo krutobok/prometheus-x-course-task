@@ -39,7 +39,7 @@ const BookOrder = ({ book }) => {
           Count:
         </label>
         <input
-          disabled={!bookIndex}
+          disabled={!maxBooksValue}
           data-testid="count"
           type="number"
           className={styles['book__count-input']}
@@ -54,7 +54,7 @@ const BookOrder = ({ book }) => {
           {(book.price * count).toFixed(2)}
         </span>
       </p>
-      <MyButton disabled={!bookIndex} className={styles['book__order-btn']}>
+      <MyButton disabled={!maxBooksValue} className={styles['book__order-btn']}>
         Add to cart
       </MyButton>
     </form>
